@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tours View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ToursViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ToursViewController" customModule="Etlas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJl-Mu-u18">
+                                <rect key="frame" x="0.0" y="372" width="393" height="480"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cSW-N0-XXT">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0s-ha-aC0">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSS-JY-NFu" customClass="RatingView" customModule="Etlas" customModuleProvider="target">
+                                                        <rect key="frame" x="219" y="24" width="150" height="24"/>
+                                                        <color key="backgroundColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="1Hf-jJ-ZCG"/>
+                                                            <constraint firstAttribute="width" constant="150" id="kyA-sM-NGN"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYE-sD-zqC">
+                                                        <rect key="frame" x="24" y="24" width="187" height="25.666666666666671"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Tour Name">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.74901960784313726" green="0.50588235294117645" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="22" name="Montserrat-SemiBold"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbX-3l-8ls">
+                                                        <rect key="frame" x="24" y="81.666666666666686" width="345" height="755"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+has been the industry's standard dummy text ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a type specimen book. It has survived
+not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+has been the industry's standard dummy text ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a type specimen book. It has survived
+not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.20392156862745098" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="18" name="Montserrat-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="mSS-JY-NFu" firstAttribute="leading" secondItem="mYE-sD-zqC" secondAttribute="trailing" constant="8" id="27C-iv-aaH"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="CUK-bK-npd"/>
+                                                    <constraint firstItem="mYE-sD-zqC" firstAttribute="leading" secondItem="q0s-ha-aC0" secondAttribute="leading" constant="24" id="JyG-Cr-oCW"/>
+                                                    <constraint firstItem="EbX-3l-8ls" firstAttribute="top" secondItem="mYE-sD-zqC" secondAttribute="bottom" constant="32" id="Qgt-2K-Ofk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mSS-JY-NFu" secondAttribute="trailing" constant="24" id="RF0-PC-KZO"/>
+                                                    <constraint firstItem="mYE-sD-zqC" firstAttribute="top" secondItem="q0s-ha-aC0" secondAttribute="top" constant="24" id="eOd-Mp-XVu"/>
+                                                    <constraint firstItem="mSS-JY-NFu" firstAttribute="top" secondItem="q0s-ha-aC0" secondAttribute="top" constant="24" id="f1E-WV-Xz7"/>
+                                                    <constraint firstItem="EbX-3l-8ls" firstAttribute="leading" secondItem="mYE-sD-zqC" secondAttribute="leading" id="kBl-w4-RXE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EbX-3l-8ls" secondAttribute="trailing" constant="24" id="o5a-9P-gdv"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cSW-N0-XXT" firstAttribute="leading" secondItem="5dy-vY-IrE" secondAttribute="leading" id="6pQ-OI-Vyg"/>
+                                    <constraint firstItem="cSW-N0-XXT" firstAttribute="bottom" secondItem="5dy-vY-IrE" secondAttribute="bottom" id="Ikv-lZ-UMI"/>
+                                    <constraint firstItem="cSW-N0-XXT" firstAttribute="top" secondItem="5dy-vY-IrE" secondAttribute="top" id="hQV-jV-PBd"/>
+                                    <constraint firstItem="cSW-N0-XXT" firstAttribute="trailing" secondItem="5dy-vY-IrE" secondAttribute="trailing" id="icY-OM-zAA"/>
+                                    <constraint firstItem="cSW-N0-XXT" firstAttribute="width" secondItem="hhc-Tv-s45" secondAttribute="width" id="nvZ-KO-Jlr"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="5dy-vY-IrE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="hhc-Tv-s45"/>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VXQ-8t-CpG">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="372"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="cfC-ZG-0eV"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iWK-GI-dcm">
+                                    <size key="itemSize" width="392" height="372"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tourImgsCollectionViewCell" id="dbe-Uw-8lV" customClass="TourImgsCollectionViewCell" customModule="Etlas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="392" height="372"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cbk-VX-kWO">
+                                            <rect key="frame" x="0.0" y="0.0" width="392" height="372"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mHg-kK-frf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="392" height="372"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mHg-kK-frf" firstAttribute="leading" secondItem="Cbk-VX-kWO" secondAttribute="leading" id="G3q-fs-MWJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="mHg-kK-frf" secondAttribute="bottom" id="QxT-P9-oO0"/>
+                                                <constraint firstItem="mHg-kK-frf" firstAttribute="top" secondItem="Cbk-VX-kWO" secondAttribute="top" id="dRr-aX-FQG"/>
+                                                <constraint firstAttribute="trailing" secondItem="mHg-kK-frf" secondAttribute="trailing" id="mLS-GW-IrT"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="392" height="372"/>
+                                        <connections>
+                                            <outlet property="tourImageView" destination="mHg-kK-frf" id="9VR-RP-Lp5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-dv-uZS">
+                                <rect key="frame" x="337" y="56" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="NP6-Hu-Ixz"/>
+                                    <constraint firstAttribute="height" constant="32" id="wSH-LE-LDB"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.20392156859999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="INu-E3-oSn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VXQ-8t-CpG" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6kP-Ku-mXg"/>
+                            <constraint firstItem="eJl-Mu-u18" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="F2c-Yv-kY3"/>
+                            <constraint firstItem="EFb-dv-uZS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="56" id="MWd-6w-zn5"/>
+                            <constraint firstAttribute="bottom" secondItem="eJl-Mu-u18" secondAttribute="bottom" id="Odw-ns-Xmb"/>
+                            <constraint firstItem="VXQ-8t-CpG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TgM-JJ-L6H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EFb-dv-uZS" secondAttribute="trailing" constant="24" id="ZLC-de-SL5"/>
+                            <constraint firstItem="VXQ-8t-CpG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="dkM-hP-EVe"/>
+                            <constraint firstItem="eJl-Mu-u18" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="fm3-A9-4zk"/>
+                            <constraint firstItem="eJl-Mu-u18" firstAttribute="top" secondItem="VXQ-8t-CpG" secondAttribute="bottom" id="rEl-mC-42R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgsCollectionView" destination="VXQ-8t-CpG" id="CzC-by-RWq"/>
+                        <outlet property="rateView" destination="mSS-JY-NFu" id="C9F-1M-gho"/>
+                        <outlet property="tourDescriptionLabel" destination="EbX-3l-8ls" id="aqe-8m-iq9"/>
+                        <outlet property="tourTitleLabel" destination="mYE-sD-zqC" id="ekt-Mh-E0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600.76335877862596" y="-38.028169014084511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
